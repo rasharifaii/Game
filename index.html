@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0b14" />
+  <title>Neon Arcade | Play & Win</title>
+  <link rel="stylesheet" href="game.css" />
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#">NEON<span>ARCADE</span></a>
+    <div class="nav-right">
+      <span class="online"><span class="dot"></span> ARCADE ONLINE</span>
+      <div class="score-box">🏆 <span id="total-score">0</span> XP</div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">YOUR NEXT OBSESSION STARTS HERE</p>
+      <h1>READY TO <span>PLAY?</span></h1>
+      <p class="subtitle">
+        Three mini-games. Endless fun. How high can you score?
+      </p>
+      <a href="#games" class="main-btn">EXPLORE GAMES ↓</a>
+    </section>
+
+    <section class="stats">
+      <div class="stat-card">
+        <span>🎮</span>
+        <div><strong>03</strong><small>MINI GAMES</small></div>
+      </div>
+      <div class="stat-card">
+        <span>⚡</span>
+        <div><strong id="stat-score">0</strong><small>TOTAL XP</small></div>
+      </div>
+      <div class="stat-card">
+        <span>🥇</span>
+        <div><strong id="best-score">0</strong><small>BEST SCORE</small></div>
+      </div>
+    </section>
+
+    <section id="games" class="games-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">CHOOSE YOUR CHALLENGE</p>
+          <h2>THE <span>ARCADE</span></h2>
+        </div>
+        <span class="game-count">03 GAMES AVAILABLE</span>
+      </div>
+
+      <div class="game-grid">
+        <article class="game-card purple">
+          <div class="game-top">
+            <span class="game-icon">🎯</span>
+            <span class="tag">LOGIC</span>
+          </div>
+          <h3>Guess the Number</h3>
+          <p>Can you crack the secret number? You have 10 attempts.</p>
+          <button class="play-btn" data-game="guess">PLAY NOW <span>↗</span></button>
+        </article>
+
+        <article class="game-card cyan">
+          <div class="game-top">
+            <span class="game-icon">✊</span>
+            <span class="tag">STRATEGY</span>
+          </div>
+          <h3>Rock Paper Scissors</h3>
+          <p>Challenge the computer and win three rounds.</p>
+          <button class="play-btn" data-game="rps">PLAY NOW <span>↗</span></button>
+        </article>
+
+        <article class="game-card pink">
+          <div class="game-top">
+            <span class="game-icon">🧠</span>
+            <span class="tag">MEMORY</span>
+          </div>
+          <h3>Memory Match</h3>
+          <p>Find all six matching pairs. Test your memory!</p>
+          <button class="play-btn" data-game="memory">PLAY NOW <span>↗</span></button>
+        </article>
+      </div>
+    </section>
+
+    <section id="play-area" class="play-area hidden">
+      <div class="play-header">
+        <div>
+          <p class="eyebrow">NOW PLAYING</p>
+          <h2 id="game-title">Game</h2>
+        </div>
+        <button id="close-game" class="close-btn" aria-label="Close game">✕</button>
+      </div>
+      <div id="game-content"></div>
+    </section>
+
+    <footer>
+      <a class="logo" href="#">NEON<span>ARCADE</span></a>
+      <p>BUILT TO PLAY. DESIGNED TO WIN.</p>
+      <p class="copyright">© 2026 Rasha AL Rifaii · Your personal gaming zone</p>
+    </footer>
+  </main>
+</body>
+</html>
